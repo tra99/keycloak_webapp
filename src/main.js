@@ -5,7 +5,7 @@ import keycloak from "./keycloak";
 
 keycloak.init({
   onLoad: "login-required",
-  checkLoginIframe: false, // 🔹 Disables third-party iframe check
+  checkLoginIframe: false,
 }).then(() => {
   createApp(App).use(router).mount("#app");
 }).catch(error => {
